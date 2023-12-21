@@ -15,7 +15,16 @@
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>domain-driven-design-examples</name>
+  <name>domain-driven-design-example</name>
   <description>领域驱动设计实战代码示例</description>
+
+  <modules>
+    <module>ddd-application</module>
+    <module>ddd-domain</module>
+    <module>ddd-external</module>
+    <module>ddd-persistence</module>
+    <module>ddd-type</module>
+    <module>ddd-web</module>
+  </modules>
 
 </project>
