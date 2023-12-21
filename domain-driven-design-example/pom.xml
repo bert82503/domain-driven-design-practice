@@ -11,7 +11,7 @@
   </parent>
 
   <groupId>org.domain</groupId>
-  <artifactId>domain-driven-design-examples</artifactId>
+  <artifactId>domain-driven-design-example</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
