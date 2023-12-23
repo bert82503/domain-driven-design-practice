@@ -11,4 +11,12 @@
 
   <artifactId>ddd-persistence</artifactId>
 
+  <dependencies>
+    <!-- 二方库 -->
+    <dependency>
+      <groupId>org.domain</groupId>
+      <artifactId>ddd-domain</artifactId>
+    </dependency>
+  </dependencies>
+
 </project>

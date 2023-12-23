@@ -12,6 +12,17 @@
   <artifactId>ddd-domain</artifactId>
 
   <dependencies>
+    <!-- 二方库 -->
+    <dependency>
+      <groupId>org.domain</groupId>
+      <artifactId>ddd-persistence</artifactId>
+    </dependency>
+
+    <!-- spring-boot -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-validation</artifactId>
+    </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter</artifactId>
@@ -19,8 +30,14 @@
     </dependency>
 
     <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
+      <optional>true</optional>
     </dependency>
   </dependencies>
 
