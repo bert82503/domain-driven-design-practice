@@ -8,7 +8,7 @@ import org.ddd.domain.model.CustomerDto;
  * @author guang.yi
  * @since 2023/12/22
  */
-public interface CustomerDomainService {
+public interface CustomerService {
 
     /**
      * 注册客户

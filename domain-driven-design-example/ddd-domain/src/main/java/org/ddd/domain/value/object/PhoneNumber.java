@@ -30,6 +30,13 @@ public class PhoneNumber {
         return number.matches(pattern);
     }
 
+    /**
+     * <pre>
+     * DP 的第一个原则：
+     * Make Implicit Concepts Explicit
+     * 将隐性的概念显性化
+     * </pre>
+     */
     public String getAreaCode() {
         for (int i = 0; i < number.length(); i++) {
             String prefix = number.substring(0, i);

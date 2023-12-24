@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import org.ddd.domain.entity.Customer;
 import org.ddd.domain.gateway.CustomerGateway;
 import org.ddd.domain.model.CustomerDto;
-import org.ddd.domain.service.CustomerDomainService;
+import org.ddd.domain.service.CustomerService;
 
 /**
  * 客户领域服务实现
@@ -14,11 +14,11 @@ import org.ddd.domain.service.CustomerDomainService;
  * @since 2023/12/22
  */
 @Service("customerService")
-public class CustomerDomainServiceImpl implements CustomerDomainService {
+public class CustomerServiceImpl implements CustomerService {
 
     private final CustomerGateway customerGateway;
 
-    public CustomerDomainServiceImpl(CustomerGateway customerGateway) {
+    public CustomerServiceImpl(CustomerGateway customerGateway) {
         this.customerGateway = customerGateway;
     }
 
