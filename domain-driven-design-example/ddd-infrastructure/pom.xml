@@ -18,9 +18,22 @@
       <artifactId>ddd-domain</artifactId>
     </dependency>
 
+    <!-- spring-boot -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+    <!-- dao -->
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-boot-starter</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
       <optional>true</optional>
     </dependency>
   </dependencies>

@@ -28,6 +28,10 @@
     <module>ddd-infrastructure</module>
   </modules>
 
+  <properties>
+    <mybatis-plus.version>3.5.5</mybatis-plus.version>
+  </properties>
+
   <dependencyManagement>
     <dependencies>
       <!-- 二方库 -->
@@ -42,6 +46,14 @@
         <version>${project.version}</version>
       </dependency>
 
+      <!-- dao -->
+      <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-bom</artifactId>
+        <version>${mybatis-plus.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
