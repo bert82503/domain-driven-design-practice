@@ -12,6 +12,13 @@ import org.ddd.domain.value.object.ExchangeRate;
  */
 public interface ExchangeRateService {
 
+    /**
+     * 获取汇率
+     *
+     * @param source 来源货币
+     * @param target 目标货币
+     * @return 汇率
+     */
     ExchangeRate getExchangeRate(Currency source, Currency target);
 
 }

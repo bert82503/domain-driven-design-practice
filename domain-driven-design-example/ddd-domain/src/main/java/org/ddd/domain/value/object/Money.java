@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Currency;
 
 import lombok.Value;
+import org.ddd.domain.exception.InvalidCurrencyException;
 
 /**
  * 钱
@@ -19,7 +20,7 @@ import lombok.Value;
  * @since 2023/12/23
  */
 @Value
-public class Money {
+public class Money implements Comparable<Money> {
 
     /**
      * 支付金额
@@ -29,5 +30,29 @@ public class Money {
      * 支付货币
      */
     Currency currency;
+
+    public Money add(Money money) {
+        if (!this.currency.equals(money.getCurrency())) {
+            throw new InvalidCurrencyException("currency=" + currency + " not equals to moneyCurrency=" + money.getCurrency());
+        }
+        BigDecimal sum = this.amount.add(money.getAmount());
+        return new Money(sum, this.currency);
+    }
+
+    public Money subtract(Money money) {
+        if (!this.currency.equals(money.getCurrency())) {
+            throw new InvalidCurrencyException("currency=" + currency + " not equals to moneyCurrency=" + money.getCurrency());
+        }
+        BigDecimal subtract = this.amount.subtract(money.getAmount());
+        return new Money(subtract, this.currency);
+    }
+
+    @Override
+    public int compareTo(Money money) {
+        if (!this.currency.equals(money.getCurrency())) {
+            throw new InvalidCurrencyException("currency=" + currency + " not equals to moneyCurrency=" + money.getCurrency());
+        }
+        return this.amount.compareTo(money.getAmount());
+    }
 
 }

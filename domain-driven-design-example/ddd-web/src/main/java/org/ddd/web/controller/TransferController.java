@@ -1,4 +1,4 @@
-package org.ddd.application.controller;
+package org.ddd.web.controller;
 
 import javax.servlet.http.HttpSession;
 import java.math.BigDecimal;
@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import org.springframework.web.bind.annotation.RestController;
 
 import org.ddd.domain.model.Result;
-import org.ddd.domain.service.TransferService;
+import org.ddd.application.service.TransferService;
 
 /**
  * 转账控制器

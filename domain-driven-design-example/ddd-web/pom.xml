@@ -12,9 +12,21 @@
   <artifactId>ddd-web</artifactId>
 
   <dependencies>
+    <!-- 二方库 -->
+    <dependency>
+      <groupId>org.domain</groupId>
+      <artifactId>ddd-application</artifactId>
+    </dependency>
+
+    <!-- spring-boot -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-webflux</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
     </dependency>
   </dependencies>
 

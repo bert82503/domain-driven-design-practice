@@ -34,4 +34,11 @@ public class ExchangeRate {
         return new Money(targetAmount, to);
     }
 
+    public Money exchangeTo(Money toMoney) {
+        Validate.notNull(toMoney);
+        Validate.isTrue(to.equals(toMoney.getCurrency()));
+        BigDecimal targetAmount = toMoney.getAmount().multiply(rate);
+        return new Money(targetAmount, from);
+    }
+
 }

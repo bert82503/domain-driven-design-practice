@@ -1,6 +1,10 @@
 package org.ddd.domain.entity;
 
+import java.util.Currency;
+
 import lombok.Data;
+import org.ddd.domain.exception.DailyLimitExceededException;
+import org.ddd.domain.exception.InsufficientFundsException;
 import org.ddd.domain.value.object.AccountId;
 import org.ddd.domain.value.object.AccountNumber;
 import org.ddd.domain.value.object.Money;
@@ -33,12 +37,27 @@ public class Account {
      */
     private Money dailyLimit;
 
+    public Currency getCurrency() {
+        return this.available.getCurrency();
+    }
+
     public void withdraw(Money money) {
         // 转出
+        if (this.available.compareTo(money) < 0) {
+            throw new InsufficientFundsException();
+        }
+        if (this.dailyLimit.compareTo(money) < 0) {
+            throw new DailyLimitExceededException();
+        }
+        this.available = this.available.subtract(money);
     }
 
     public void deposit(Money money) {
         // 转入
+//        if (!this.getCurrency().equals(money.getCurrency())) {
+//            throw new InvalidCurrencyException("");
+//        }
+        this.available = this.available.add(money);
     }
 
 }

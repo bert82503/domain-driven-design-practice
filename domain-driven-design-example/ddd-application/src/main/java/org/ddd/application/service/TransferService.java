@@ -1,11 +1,14 @@
-package org.ddd.domain.service;
+package org.ddd.application.service;
 
 import java.math.BigDecimal;
 
 import org.ddd.domain.model.Result;
 
 /**
- * 转账服务
+ * 转账应用服务
+ * <p>
+ * 组件编排
+ * 这种仅包含Orchestration（编排）的服务叫做Application Service（应用服务）。
  *
  * @author guang.yi
  * @since 2023/12/26
@@ -19,7 +22,7 @@ public interface TransferService {
      * @param targetAccountNumber 目标账号
      * @param targetAmount        目标金额
      * @param targetCurrency      目标币种
-     * @return 操作结果
+     * @return 转账结果
      */
     Result<Boolean> transfer(
             Long sourceUserId, String targetAccountNumber,
