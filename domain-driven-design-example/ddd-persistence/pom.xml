@@ -17,6 +17,18 @@
       <groupId>org.domain</groupId>
       <artifactId>ddd-domain</artifactId>
     </dependency>
+
+    <!-- dao -->
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-boot-starter</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <optional>true</optional>
+    </dependency>
   </dependencies>
 
 </project>

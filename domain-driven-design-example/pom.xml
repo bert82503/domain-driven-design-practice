@@ -19,13 +19,14 @@
   <description>领域驱动设计实战代码示例</description>
 
   <modules>
-    <module>ddd-application</module>
-    <module>ddd-domain</module>
-    <module>ddd-external</module>
-    <module>ddd-persistence</module>
     <module>ddd-type</module>
-    <module>ddd-web</module>
+    <module>ddd-domain</module>
+    <module>ddd-application</module>
+    <module>ddd-persistence</module>
+    <module>ddd-external</module>
     <module>ddd-infrastructure</module>
+    <module>ddd-web</module>
+    <module>ddd-start</module>
   </modules>
 
   <properties>
@@ -37,7 +38,7 @@
       <!-- 二方库 -->
       <dependency>
         <groupId>org.domain</groupId>
-        <artifactId>ddd-application</artifactId>
+        <artifactId>ddd-type</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
@@ -47,7 +48,17 @@
       </dependency>
       <dependency>
         <groupId>org.domain</groupId>
+        <artifactId>ddd-application</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.domain</groupId>
         <artifactId>ddd-persistence</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.domain</groupId>
+        <artifactId>ddd-web</artifactId>
         <version>${project.version}</version>
       </dependency>
 

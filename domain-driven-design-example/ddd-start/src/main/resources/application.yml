@@ -1,0 +1,12 @@
+
+
+# ContextIdApplicationContextInitializer
+spring:
+  application:
+    name: "ddd-start"
+
+
+# ServerProperties
+server:
+  port: 8686
+

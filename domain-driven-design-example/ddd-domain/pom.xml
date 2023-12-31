@@ -15,6 +15,10 @@
     <!-- 二方库 -->
     <dependency>
       <groupId>org.domain</groupId>
+      <artifactId>ddd-type</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.domain</groupId>
       <artifactId>ddd-persistence</artifactId>
     </dependency>
 

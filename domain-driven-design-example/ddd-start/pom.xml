@@ -9,18 +9,26 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>ddd-type</artifactId>
+  <groupId>org.domain.bank</groupId>
+  <artifactId>ddd-start</artifactId>
+
+  <properties>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
   <dependencies>
+    <!-- 二方库 -->
     <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <optional>true</optional>
+      <groupId>org.domain</groupId>
+      <artifactId>ddd-web</artifactId>
     </dependency>
+
+    <!-- spring-boot -->
     <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <optional>true</optional>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-webflux</artifactId>
     </dependency>
   </dependencies>
 
