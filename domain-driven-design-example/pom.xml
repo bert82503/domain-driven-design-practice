@@ -23,8 +23,9 @@
     <module>ddd-domain</module>
     <module>ddd-application</module>
     <module>ddd-persistence</module>
-    <module>ddd-external</module>
     <module>ddd-infrastructure</module>
+    <module>ddd-external</module>
+    <module>ddd-message</module>
     <module>ddd-web</module>
     <module>ddd-start</module>
   </modules>

@@ -17,10 +17,10 @@
       <groupId>org.domain</groupId>
       <artifactId>ddd-type</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.domain</groupId>
-      <artifactId>ddd-persistence</artifactId>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.domain</groupId>-->
+<!--      <artifactId>ddd-persistence</artifactId>-->
+<!--    </dependency>-->
 
     <!-- spring-boot -->
     <dependency>
@@ -31,12 +31,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter</artifactId>
       <optional>true</optional>
-    </dependency>
-
-    <!-- message queue -->
-    <dependency>
-      <groupId>org.apache.rocketmq</groupId>
-      <artifactId>rocketmq-spring-boot-starter</artifactId>
     </dependency>
 
     <dependency>

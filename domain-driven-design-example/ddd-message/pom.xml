@@ -9,20 +9,9 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>ddd-start</artifactId>
+  <artifactId>ddd-message</artifactId>
 
   <dependencies>
-    <!-- 二方库 -->
-    <dependency>
-      <groupId>org.domain</groupId>
-      <artifactId>ddd-web</artifactId>
-    </dependency>
-
-    <!-- spring-boot -->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-webflux</artifactId>
-    </dependency>
   </dependencies>
 
 </project>

@@ -11,4 +11,7 @@
 
   <artifactId>ddd-external</artifactId>
 
+  <dependencies>
+  </dependencies>
+
 </project>
