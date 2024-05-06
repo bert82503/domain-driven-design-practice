@@ -60,7 +60,7 @@ public class TradeOrderDo {
     private Currency tradeCurrency;
 
     /**
-     * 状态
+     * 交易主单状态
      */
     @TableField(value = "trade_order_status")
     private Integer tradeOrderStatus;
