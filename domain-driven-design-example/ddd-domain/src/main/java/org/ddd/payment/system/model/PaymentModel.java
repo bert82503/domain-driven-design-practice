@@ -1,5 +1,6 @@
 package org.ddd.payment.system.model;
 
+import lombok.Data;
 import org.ddd.payment.system.StateMachineException;
 import org.ddd.payment.system.domain.PaymentEvent;
 import org.ddd.payment.system.domain.PaymentStatus;
@@ -9,6 +10,7 @@ import org.ddd.payment.system.domain.PaymentStatus;
  *
  * @since 2024/5/6
  */
+@Data
 public class PaymentModel {
     /**
      * 上次状态
